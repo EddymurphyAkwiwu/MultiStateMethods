@@ -18,11 +18,14 @@ The first six folders (**msm**, **msm-phase**, **cthmm**, **smms**, **BayesTSM**
 
 Each of these folders has two subfolders: **Exponential** and **Weibull**. These subfolders include:
 
-1. Simulated data based on a 3-state model, assuming the true cumulative distribution function (CDF) for progression times generated in a large population setting (n = 10^6). The data are generated under two censoring mechanisms: strong and medium (see the above paper for details).
-2. `R` code for generating datasets for either strong or medium censoring mechanisms.
+1. Simulated data based on a 3-state model, assuming the true cumulative distribution function (CDF) for progression times generated in a large population setting (n = 10^6). The data are based on two settings: p = 2 (i.e., two covariates) and strong censoring mechanism, and p = 2 and medium censoring mechanism (see the above paper for details).
+2. `R` code for generating data (e.g., n = 1000 or n = 2000) based on the two settings mentioned above.
 3. `R` code implementing the method for the respective `R` package.
 
-Additionally, the **controllers** and **source** subfolders, located within each subfolder, contain `R` functions essential for generating the simulated data.
+Each of the above methods is implemented under the setting with p = 2 and strong censoring mechanism, with the p = 2 and medium censoring setting commented out in the `R` file.  To use, please uncomment.
+
+
+For other simulation settings, see the above paper for parameter settings.  Additionally, the **controllers** and **source** subfolders, located within each subfolder, contain `R` functions essential for generating the simulated data.
 
 ### **2. Proof_of_CDF Folder**
 The **Proof_of_CDF** folder contains R code to demonstrate how the cumulative distribution function (CDF) (also known as the cumulative incidence function, CIF) can be derived using functions from the **msm** (and **msm-phase**) package. Specifically, it demonstrates the use of the following functions:
@@ -31,4 +34,4 @@ The **Proof_of_CDF** folder contains R code to demonstrate how the cumulative di
 - `qmatrix.msm()`
 - `pmatrix.msm()`
 
-As an example, the demonstration assumes an exponentially distributed 3-state model without covariates. For other models, such as Weibull distributions or those with covariates, a similar approach applies. Please refer to the **msm** package user manual for guidance on fitting models with covariates.
+As an example, the demonstration assumes an exponentially distributed 3-state model without covariates (i.e., p = 0). For other models, such as Weibull distributions or those with covariates, a similar approach applies. Please refer to the **msm** package user manual for guidance on fitting models with covariates.
