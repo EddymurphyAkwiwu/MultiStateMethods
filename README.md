@@ -35,3 +35,22 @@ The **Proof_of_CDF** folder contains R code to demonstrate how the cumulative di
 - `pmatrix.msm()`
 
 As an example, the demonstration assumes an exponentially distributed 3-state model without covariates (i.e., p = 0). For other models, such as Weibull distributions or those with covariates, a similar approach applies. Please refer to the **msm** package user manual for guidance on fitting models with covariates.
+
+
+# Installing  `R` Packages
+
+The links below provide installation instructions and documentation for the `R` packages or code sets used to implement the six methods included in this repository:
+
+* **`msm`**: See  [CRAN page](https://cran.r-project.org/web/packages/msm/index.html)
+
+* **`msm-phase`**: Implemented within the `msm` package; see [CRAN page (same as above)](https://cran.r-project.org/web/packages/msm/index.html)
+
+* **`cthmm`**: See [R-Forge project page](https://r-forge.r-project.org/R/?group_id=1410) with manual available  [here](https://research.fredhutch.org/content/dam/stripe/etzioni/files/cthmm%20manual.pdf).  Example `R` code provided by the authors is available in the *Supporting Information* section of this [paper](https://onlinelibrary.wiley.com/doi/10.1111/biom.12252?msockid=03ab8c882dc66c933e759a8c2c146d2e)
+
+* **`smms`**: See  [GitHub repository](https://github.com/NorskRegnesentral/smms)
+
+* **`BayesTSM`**: See:  [GitHub repository](https://github.com/thomasklausch2/BayesTSM)
+
+* **`hmm`**: The original code is available at [https://jonathanpw.github.io/research.html](https://jonathanpw.github.io/research.html)
+  (Scroll to the *R code* for the 2020 published paper). However, the customized code included in this repository was provided directly by the authors.
+
