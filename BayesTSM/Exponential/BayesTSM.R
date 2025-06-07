@@ -20,7 +20,7 @@ source('controllers/startup.r')
 
 
 
-source('data_gen_func_Exp_BayesTSM.R')  # For Weibull distributed survival times
+source('data_gen_func_Exp_BayesTSM.R')  # For Exponentially-distributed survival times
 
 head(dat)
 
