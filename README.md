@@ -43,7 +43,7 @@ The links below provide installation instructions and documentation for the `R` 
 
 * **`msm`**: See  [CRAN page](https://cran.r-project.org/web/packages/msm/index.html)
 
-* **`msm-phase`**: Implemented within the `msm` package; see [CRAN page (same as above)](https://cran.r-project.org/web/packages/msm/index.html)
+* **`msm-phase`**: Implemented within the `msm` package based on the method proposed by [Titman and Sharples (2010)](https://doi.org/10.1111/j.1541-0420.2009.01339.x)
 
 * **`cthmm`**: See [R-Forge project page](https://r-forge.r-project.org/R/?group_id=1410) with manual available  [here](https://research.fredhutch.org/content/dam/stripe/etzioni/files/cthmm%20manual.pdf).  Example `R` code provided by the authors is available in the *Supporting Information* section of this [paper](https://onlinelibrary.wiley.com/doi/10.1111/biom.12252?msockid=03ab8c882dc66c933e759a8c2c146d2e)
 
@@ -53,4 +53,5 @@ The links below provide installation instructions and documentation for the `R` 
 
 * **`hmm`**: The original code is available at [https://jonathanpw.github.io/research.html](https://jonathanpw.github.io/research.html)
   (Scroll to the *R code* for the 2020 published paper). However, the customized code included in this repository was provided directly by the authors.
+
 
